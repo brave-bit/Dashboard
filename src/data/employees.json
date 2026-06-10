@@ -1,0 +1,101 @@
+[
+  {
+    "id": "emp-001",
+    "fullName": "علي كريم محمود",
+    "email": "ali.karim@company.iq",
+    "department": "engineering",
+    "isActive": true,
+    "salary": 2100000,
+    "hireDate": "2019-03-15",
+    "position": "مهندس برمجيات أول",
+    "phone": "+9647701234567"
+  },
+  {
+    "id": "emp-002",
+    "fullName": "زينب حسين الجبوري",
+    "email": "zainab.jabouri@company.iq",
+    "department": "hr",
+    "isActive": true,
+    "salary": 1450000,
+    "hireDate": "2021-07-01",
+    "position": "مديرة موارد بشرية",
+    "phone": "+9647802345678"
+  },
+  {
+    "id": "emp-003",
+    "fullName": "مصطفى فاضل العبيدي",
+    "email": "mustafa.obeidi@company.iq",
+    "department": "finance",
+    "isActive": true,
+    "salary": 1750000,
+    "hireDate": "2017-11-20",
+    "position": "محلل مالي",
+    "phone": "+9647903456789"
+  },
+  {
+    "id": "emp-004",
+    "fullName": "ريتاج سعد الدليمي",
+    "email": "ritaj.dulaimi@company.iq",
+    "department": "marketing",
+    "isActive": false,
+    "salary": 1100000,
+    "hireDate": "2020-05-10",
+    "position": "أخصائية تسويق",
+    "phone": "+9647504567890"
+  },
+  {
+    "id": "emp-005",
+    "fullName": "حسام علي الموسوي",
+    "email": "hussam.musawi@company.iq",
+    "department": "sales",
+    "isActive": true,
+    "salary": 1550000,
+    "hireDate": "2018-09-01",
+    "position": "مدير مبيعات",
+    "phone": "+9647715678901"
+  },
+  {
+    "id": "emp-006",
+    "fullName": "نور هاشم البصري",
+    "email": "noor.basri@company.iq",
+    "department": "operations",
+    "isActive": true,
+    "salary": 1320000,
+    "hireDate": "2022-01-18",
+    "position": "منسقة عمليات",
+    "phone": "+9647816789012"
+  },
+  {
+    "id": "emp-007",
+    "fullName": "كاظم جعفر الزبيدي",
+    "email": "kadhim.zubaidi@company.iq",
+    "department": "engineering",
+    "isActive": false,
+    "salary": 1900000,
+    "hireDate": "2016-04-22",
+    "position": "مهندس أنظمة",
+    "phone": "+9647907890123"
+  },
+  {
+    "id": "emp-008",
+    "fullName": "سميرة كامل الكربلائي",
+    "email": "samira.karbalaie@company.iq",
+    "department": "finance",
+    "isActive": true,
+    "salary": 2400000,
+    "hireDate": "2015-08-30",
+    "position": "مديرة مالية",
+    "phone": "+9647708901234"
+  },
+  {
+    "fullName": "يوسف وسام احمد",
+    "email": "yousefwessam@gmail.com",
+    "department": "sales",
+    "isActive": true,
+    "salary": 550000,
+    "hireDate": "2026-03-11",
+    "position": "موظف مبيعات",
+    "phone": "07719345290",
+    "id": "emp-836263"
+  }
+]
