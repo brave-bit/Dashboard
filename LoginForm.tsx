@@ -1,12 +1,10 @@
-"use client";
-
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 import { Lock, User, LogIn, Building2, ArrowRight, Users } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { loginAction } from "@/app/login/actions";
 
 const ERROR_MESSAGES: Record<string, string> = {
-  invalid: "بيانات الدخول غير صحيحة",
+  invalid: "بيانات الدخول غير صحيحة — تأكد من ADMIN_PASSWORD في Vercel",
   missing: "اسم المستخدم وكلمة المرور مطلوبان",
   config:
     "إعدادات الخادم ناقصة. أضف AUTH_SECRET و ADMIN_USERNAME و ADMIN_PASSWORD في Vercel.",
@@ -15,10 +13,12 @@ const ERROR_MESSAGES: Record<string, string> = {
   session: "انتهت الجلسة. سجّل الدخول مرة أخرى",
 };
 
-export function LoginForm() {
-  const searchParams = useSearchParams();
-  const from = searchParams.get("from") ?? "/admin";
-  const errorCode = searchParams.get("error");
+interface LoginFormProps {
+  from: string;
+  errorCode?: string;
+}
+
+export function LoginForm({ from, errorCode }: LoginFormProps) {
   const error = errorCode ? ERROR_MESSAGES[errorCode] ?? "فشل تسجيل الدخول" : "";
 
   const inputClass =
@@ -37,11 +37,7 @@ export function LoginForm() {
       </div>
 
       <div className="rounded-2xl border border-surface-border bg-surface-card p-6 shadow-card">
-        <form
-          action={`/api/auth/login?redirect=1&from=${encodeURIComponent(from)}`}
-          method="POST"
-          className="space-y-4"
-        >
+        <form action={loginAction} className="space-y-4">
           <input type="hidden" name="from" value={from} />
 
           {error && (
